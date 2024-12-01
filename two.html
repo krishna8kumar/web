@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121;color: aliceblue;">
+    <ul class="language">
+        <li>javascript</li>
+        <li>golang </li>
+        <li>node.js</li>
+
+    </ul>
+</body>
+<script>
+    function addlanguage(langName){
+        const li=document.createElement("li")
+        li.innerHTML=`${langName}`
+        document.querySelector(".language").appendChild(li)
+    }
+    
+    addlanguage("java")
+    
+    // edit
+    const secondlang=document.querySelector("li:nth-child(2)")
+    secondlang.innerHTML='css'
+    // edit
+    const javascript=document.querySelector('li:nth-child(1)')
+    javascript.innerHTML="typescript"
+
+    // remove
+    const rmov=document.querySelector('li:nth-child(4)')
+    rmov.remove()
+</script>
+</html>

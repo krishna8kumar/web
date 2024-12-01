@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing</title>
+    <style>
+        body{
+            background-color: #212121;
+            color: #fff;
+        }
+        .nav1{
+            background-color: orange;
+            border-radius: 5px;
+            text-align: center;
+            font-size: large;
+            height: 23px;
+        }
+        .nav2{
+            background-color: black;
+            border-radius: 5px;
+            margin-top: 5px;
+            text-align: center;
+            font-size: large;
+            height: 23px;
+
+        }
+        div.main{
+            display: grid;
+            justify-content: center;
+            text-align: center;
+            margin-top: 20px;
+            font-family: 'Courier New', Courier, monospace  ;
+        }
+        .label{
+            font-size:60px;
+        }
+        .textbox{
+            border: 2px solid pink;
+        }
+        button{
+            border-radius: 4px;
+            height:30px ;
+            width:150px ;
+            font-size: large;
+            margin-left: 15px;
+        }
+        .restart{
+            margin-top: 10px;
+        }
+        .sub{
+            margin-top: 70px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav1">
+        Hello World 
+    </nav>
+    <nav class="nav2"> Number guessing game</nav>
+
+    <div class="main">
+        <p>Try and guess a random number between 1 and 100. <br>You have 10 attempts to guess the right number.</p>
+       <div class="sub">
+        <form >
+            <p><label class="label">Guess a number</label></p>
+            <input type="text" class="textbox">
+            <button class="button">Submit guess</button><br>
+            <button class="restart"> New Game</button>
+        </form>
+        <div class="result">
+            <p>Previous guesses: <span class="guesses"></span></p>
+            <p>Remaining guesses : <span class="lastresult">10</span></p>
+            <p class="loworhi"></p>
+            
+        </div>
+        
+    </div>
+</body>
+<script src="project4.js">
+</script>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>insertion through script</title>
+    <style>
+        body{
+            background-color: #212121;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    
+</body >
+<script>
+    const div=document.createElement("div")
+    console.log(div);
+    div.style.backgroundColor="green"
+    div.style.borderRadius="20px"
+    // div.innerText="hey it is my first web dev prog using javascript"
+    const addText=document.createTextNode("hey it is my first web dev prog using javascript")
+    div.appendChild(addText)
+    document.body.appendChild(div)
+    div.style.padding="10px"
+    div.style.textShadow="2px 1px #212121"
+    div.style.marginTop="50px"
+</script>
+</html>

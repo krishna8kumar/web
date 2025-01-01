@@ -9,8 +9,9 @@ body{
 nav{
     background-color: #212121;
     height: 5vh;
-    width: 100vw;
+    width: 98vw;
     margin-bottom: 10px;
+    margin-left: 5px;
     position: sticky;
     top: 2px;
     filter: drop-shadow(5px 5px 5px black);
@@ -207,4 +208,38 @@ nav img{
 .to-do-buttton:active {
   box-shadow: #2a2a37 0 3px 7px inset;
   transform: translateY(2px);
+}
+footer{
+  margin-top: 10px;
+  height: 20vh;
+  border-top-right-radius: 5px;
+  border-top-left-radius:5px ;
+  background-color: #212121;
+  filter: drop-shadow(2px 2px 2px white);
+  padding-top: 2vh;
+  justify-items: center;  
+}
+footer h2 {
+  color: whitesmoke;
+  font-family: 'Cabin Sketch';
+}
+footer a {
+  color: whitesmoke;
+  font-family:'Courier New', Courier, monospace;
+  text-decoration:none;
+  font-size: large;
+  display: block;
+  margin: 5px;
+}
+footer .designer{
+  display: flex;
+  font-size: large;
+  color: #c2fbd7;
+}
+.reserved{
+  background-color: #36395A;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius:5px ;
+  margin-bottom: 5px;
+  justify-items: center;
 }
